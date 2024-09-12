@@ -64,6 +64,7 @@ body {
   box-shadow: none;
   border-radius: 0;
   font-weight: 400;
+  transition: all 0.5s ease all;
 }
 
 .control-label {
@@ -81,11 +82,14 @@ body {
 .form-control:not(:placeholder-shown) + .control-label,
 .form-control:not(:empty) + .control-label {
   top: -14px;
-  font-size: 12px;
+  font-size: 14px;
   color: #121b32; /* Adjust color as needed */
   position: absolute;
 }
 
 .form-control:focus {
-  border-bottom: 1px solid #121b32;
+  border-bottom: 3px solid #121b32;
+}
+.custom-select:focus {
+  border-bottom: 2px solid #121b32 !important;
 }

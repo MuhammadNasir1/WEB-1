@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #8e8e8e;
+}
+
+.main-container {
+  margin-top: 150px;
+}
+
+.card-header {
+  padding: 25px 0 35px;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--bs-nav-tabs-link-active-color);
+  background-color: var(--bs-nav-tabs-link-active-bg);
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+  border: none;
+}
+
+.nav-main {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.nav-link {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #121b32;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 16px 26px -10px rgb(54 142 244 / 56%),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+  transition: all 0.5s;
+}
+
+.form-control,
+.form-group .form-control {
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  height: 36px;
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 1.42857;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.control-label {
+  top: 10px;
+  left: 0;
+  line-height: 1.07143;
+  font-size: 16px;
+  position: absolute;
+  transition: 0.3s ease all;
+  pointer-events: none;
+  color: #c4c1c1;
+}
+
+.form-control:focus + .control-label,
+.form-control:not(:placeholder-shown) + .control-label,
+.form-control:not(:empty) + .control-label {
+  top: -14px;
+  font-size: 12px;
+  color: #121b32; /* Adjust color as needed */
+  position: absolute;
+}
+
+.form-control:focus {
+  border-bottom: 1px solid #121b32;
+}
